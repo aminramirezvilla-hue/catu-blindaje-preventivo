@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#1E3A8A" />
+  <meta name="description" content="CATU · Blindaje Preventivo. Checklists para ejecutores del gasto. Ley 266 de Guerrero." />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-title" content="CATU Blindaje" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png" />
+  <title>CATU · Blindaje Preventivo</title>
+  <link rel="stylesheet" href="css/styles.css?v=21" />
+</head>
+<body>
+  <header class="app-header">
+    <div class="brand" id="brand-home">
+      <img src="icons/logo-catu-dorado.png" alt="CATU" />
+      <div>
+        <h1>Blindaje Preventivo</h1>
+        <p>CATU · ejecutores del gasto · v2.1</p>
+      </div>
+    </div>
+    <span class="chip off" id="chip-offline">Sin conexión</span>
+    <span class="chip ok off" id="chip-ready">Lista offline</span>
+  </header>
+  <main>
+    <section id="screen-landing" class="screen active"></section>
+    <section id="screen-obra" class="screen"></section>
+    <section id="screen-modulo" class="screen"></section>
+    <section id="screen-reporte" class="screen"></section>
+  </main>
+  <script src="js/data.js"></script>
+  <script src="js/app.js?v=21"></script>
+</body>
+</html>
