@@ -307,7 +307,12 @@
   }
 
   function esc(s) {
-    return String(s || "").replace(/[&<>"']/g, (c) => ({ "&": "&", "<": "<", ">": ">", '"': """, "'": "&#39;" }[c]));
+    return String(s || "")
+      .replace(/&/g, "&#38;")
+      .replace(/</g, "&#60;")
+      .replace(/>/g, "&#62;")
+      .replace(/"/g, "&#34;")
+      .replace(/'/g, "&#39;");
   }
 
   $("brand-home").onclick = renderLanding;
@@ -328,7 +333,12 @@
     }).catch(() => {});
   }
 
-  load();
-  renderLanding();
-  syncNet();
+  try {
+    load();
+    renderLanding();
+    syncNet();
+  } catch (err) {
+    const el = $("screen-landing");
+    if (el) el.innerHTML = "<p style='padding:1rem'>No se pudo iniciar la PWA. Recargue con Ctrl+Shift+R.<br>" + String(err) + "</p>";
+  }
 })();
