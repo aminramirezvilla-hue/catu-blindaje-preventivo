@@ -1,11 +1,11 @@
-const CACHE = "catu-blindaje-static-v21";
+const CACHE = "catu-blindaje-static-v22";
 const ASSETS = [
   "./",
   "./index.html",
   "./manifest.json",
-  "./css/styles.css?v=21",
+  "./css/styles.css?v=22",
   "./js/data.js",
-  "./js/app.js?v=21",
+  "./js/app.js?v=22",
   "./icons/logo-catu-dorado.png",
   "./icons/icon-192.png",
   "./icons/icon-512.png",

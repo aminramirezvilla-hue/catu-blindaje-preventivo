@@ -12,7 +12,8 @@
   <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png" />
   <link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png" />
   <title>CATU · Blindaje Preventivo</title>
-  <link rel="stylesheet" href="css/styles.css?v=21" />
+  <base href="./" />
+  <link rel="stylesheet" href="css/styles.css?v=22" />
 </head>
 <body>
   <header class="app-header">
@@ -27,12 +28,12 @@
     <span class="chip ok off" id="chip-ready">Lista offline</span>
   </header>
   <main>
-    <section id="screen-landing" class="screen active"></section>
+    <section id="screen-landing" class="screen active"><p class="lead" style="text-align:center;margin-top:2rem">Cargando checklists…</p></section>
     <section id="screen-obra" class="screen"></section>
     <section id="screen-modulo" class="screen"></section>
     <section id="screen-reporte" class="screen"></section>
   </main>
   <script src="js/data.js"></script>
-  <script src="js/app.js?v=21"></script>
+  <script src="js/app.js?v=22"></script>
 </body>
 </html>
