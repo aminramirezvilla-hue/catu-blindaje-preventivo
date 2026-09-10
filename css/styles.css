@@ -112,6 +112,8 @@ textarea { min-height: 64px; resize: vertical; }
 .bar { height: 6px; background: #EEF2FF; border-radius: 99px; overflow: hidden; margin-top: 0.45rem; }
 .bar > i { display: block; height: 100%; background: var(--navy); }
 .kpi-row { display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem; margin: 0.8rem 0; }
+.kpi-row.five { grid-template-columns: repeat(5, 1fr); }
+@media (max-width: 800px) { .kpi-row.five { grid-template-columns: 1fr 1fr; } }
 .kpi { background: #fff; border: 1px solid var(--line); border-radius: 12px; padding: 0.7rem; }
 .kpi .k { font-size: 0.65rem; text-transform: uppercase; letter-spacing: .04em; color: var(--gold); font-weight: 700; }
 .kpi .v { font-size: 1.35rem; font-weight: 800; color: var(--navy); }
@@ -145,5 +147,5 @@ td { border-bottom: 1px solid #EEF2FF; padding: 0.35rem 0.3rem; vertical-align: 
   .app-header, .no-print, .sticky-bar { display: none !important; }
   main { padding: 0; max-width: none; }
   .screen { display: none !important; }
-  #screen-reporte { display: block !important; }
+  .screen.active { display: block !important; }
 }
