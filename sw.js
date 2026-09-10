@@ -6,6 +6,7 @@ const ASSETS = [
   "./css/styles.css?v=23",
   "./js/data.js",
   "./js/app.js?v=23",
+  "./js/oficio.js",
   "./icons/logo-catu-dorado.png",
   "./icons/icon-192.png",
   "./icons/icon-512.png",
